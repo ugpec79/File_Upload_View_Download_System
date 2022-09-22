@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Welcome</h1><h1><%=name%></h1>
+    <h1>View</h1>
+    <ul>
+    <% for (var i=0;i<view.length;i++){%>
+        <li><%=view[i].filename%> <a href="/vew/<%=view[i].filename%>">View</a></li>
+
+    <%}%>
+</ul>
+<h1>Download</h1>
+    <ul>
+    <% for (var i=0;i<download.length;i++){%>
+        <li><%=download[i].filename%> <a href="/dwnload/<%=download[i].filename%>">Download</a></li>
+
+    <%}%>
+</ul>
+
+   
+   
+</body>
+</html>
